@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+body {
+    max-width: 651px;
+    margin: 0 auto;
+}
+
+.b-chat {
+    max-width: 651px;
+    padding: 18px 0 18px 0;
+    background: url(/img/bg\ .jpg);
+    background-size: cover;
+}
+
+.b-conversation {
+    margin: 0 auto;
+    position: relative;
+}
+
+/* .b-window-message {
+    overflow-y: hidden;
+    height: 300px;
+} */
+
+.b-item {
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.b-item__logo {
+    position: relative;
+    margin: 0 18px;
+}
+
+.b-imeges {
+    clip-path: polygon(50% 0%, 100% 50%, 83% 100%, 17% 100%, 0% 50%);
+}
+
+.b-item__text {
+    background: #F1F3F5;
+    border-radius: 5px;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+    margin-right: 80px;
+}
+
+.b-item__text::before {
+    content: "";
+    clip-path: polygon(50% 0%, 100% 50%, 83% 100%);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #F1F3F5;
+    transform: rotate(124deg);
+    left: -5px;
+    top: -3px;
+}
+
+.b-item--right {
+    justify-content: flex-end;
+}
+
+.b-item__logo--right {
+    order: 2
+}
+
+.b-item__text--right {
+    order: 1;
+    margin: 0;
+    width: auto;
+}
+
+.b-item__text--right::before {
+    content: " ";
+    clip-path: polygon(34% -6%, 100% 50%, 83% 100%);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #F1F3F5;
+    transform: rotate(95deg);
+    left: 100px;
+    top: -5px;
+}
+
+.b-line-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b-line-date__text {
+    width: 308px;
+    margin: 0 10px;
+}
+
+.b-line-date__border {
+    width: 100%;
+}
+
+.b-form-contain {
+    width: 100%;
+}
+
+.b-line {
+    margin-bottom: 20px;
+}
+
+.b-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.b-form__textarea {
+    max-width: 590px;
+    border-radius: 4px;
+    margin: 0 18px 20px 18px;
+    color: #696969;
+    padding: 10px;
+}
+
+.b-form__button {
+    border-radius: 41px;
+    background: #0F54B9;
+    color: #fff;
+    width: 144px;
+    height: 41px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 0 18px;
+
+}
